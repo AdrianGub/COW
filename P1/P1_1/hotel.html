@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotel+</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Hotel+</h1>
+        <button id="login-btn">Iniciar Sesión</button>
+    </header>
+    <main>
+        <!-- LEFT -->
+        <section class="left">
+            <h2>Tu próxima estancia:</h2>
+            <form id="form-stay">
+                <div class="form-group-stay">
+                    <label for="destination">¿A dónde vas?</label>
+                    <input type="text" id="destination" name="destination" placeholder="Destino">
+                </div>
+                <div class="form-group-stay">
+                    <label for="dates">Fecha de entrada - Fecha de salida</label>
+                    <div class="input-group">
+                        <input type="text" id="checkin" name="checkin" placeholder="Fecha de entrada">
+                        <input type="text" id="checkout" name="checkout" placeholder="Fecha de salida">
+                    </div>
+                </div>
+                <div class="form-group-stay">
+                    <label for="guests">Adultos, niños y habitaciones</label>
+                    <div class="input-group">
+                        <input type="number" id="adults" name="adults" min="1" placeholder="Adultos">
+                        <input type="number" id="children" name="children" min="0" placeholder="Niños">
+                        <input type="number" id="rooms" name="rooms" min="1" placeholder="Habitaciones">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- CENTER -->
+        <section class="center">
+            <form id="center-form" action="https://www.google.com/search" target="_blank">
+                <div>
+                    Busca hoteles en Google: <input type="text" name="q" id="text" value="" />
+                    <input type="submit" value="Buscar" />
+                </div>
+            </form>
+            <h2>Descubre España</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Lugares de interés</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="assets/imgs/madrid.jpg" alt="Foto de Madrid">
+                            <h3><a href="https://es.wikipedia.org/wiki/Madrid" target="_blank">Madrid</a></h3>
+                        </td>
+                        <td>
+                            <img src="assets/imgs/barcelona.jpg" alt="Foto de Barcelona">
+                            <h3><a href="https://es.wikipedia.org/wiki/Barcelona" target="_blank">Barcelona</a></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/imgs/malaga.jpg" alt="Foto de Málaga">
+                            <h3><a href="https://es.wikipedia.org/wiki/M%C3%A1laga" target="_blank">Málaga</a></h3>
+
+                        </td>
+                        <td>
+                            <img src="assets/imgs/granada.jpg" alt="Foto de Granada">
+                            <h3><a href="https://es.wikipedia.org/wiki/Granada" target="_blank">Granada</a></h3>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- RIGHT -->
+        <aside class="right">
+            <h3>Lista de Hoteles Mejor Valorados</h3>
+            <ul>
+                <li>
+                    <h4><a
+                            href="https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia?src=loc.local_listing.mobcn.ggl">Hotel
+                            Mandarín Oriental</a></h4>
+                    <p>Ubicación: Barcelona</p>
+                    <p>Puntuación: 9.5/10</p>
+                </li>
+                <li>
+                    <h4><a
+                            href="https://www.fourseasons.com/madrid/?utm_source=google&utm_medium=organicsearch&utm_campaign=tor-mmd-hre-mid-seo-na&utm_content=na-na&utm_term=na">
+                            Hotel Four Seasons</a></h4>
+                    <p>Ubicación: Madrid</p>
+                    <p>Puntuación: 9.4/10</p>
+                </li>
+                <li>
+                    <h4><a 
+                            href="https://www.granhotelmiramarmalaga.com/es/?utm_source=google&utm_medium=organic&utm_campaign=my_business">
+                            Gran Hotel Miramar</a></h4>
+                    <p>Ubicación: Málaga</p>
+                    <p>Puntuación: 9.3/10</p>
+                </li>
+            </ul>
+        </aside>
+    </main>
+    <footer class="footer">
+        <h4>Suscríbete!</h4>
+        <h6>Contáctanos: +34 698 765 432</h6> <h6>hotelplus@gmail.com</h6>
+    </footer>
+</body>
+
+</html>
